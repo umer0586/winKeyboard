@@ -1,5 +1,5 @@
 # winKeyboad
-A tiny Java native library for Windows for emulating keyboard via scan codes.
+A tiny Java helper for Windows for emulating keyboard via scan codes.
 
 In java application if you send keystrokes to the game using <strong>java.awt.Robot</strong>, then games which uses DirectInput API for reading the keyboard input may have no effect.
 
