@@ -8,17 +8,17 @@ public class Keyboard
     
     static {
     	
-    	
-    	boolean is64bit = false;
-    	if (System.getProperty("os.name").contains("Windows")) 
-    	    is64bit = (System.getenv("ProgramFiles(x86)") != null);
-    	else 
-    	    is64bit = (System.getProperty("os.arch").indexOf("64") != -1);
-    	    	
-    	if(is64bit)
+	String jreArchitecture = System.getProperty("sun.arch.data.model");
+     	    	
+    	if(jreArchitecture.equals("64"))
     	  System.loadLibrary("SCGen64");
+    	
+    	else if(jreArchitecture.equals("32"))
+    	  System.loadLibrary("SCGen32");
+    	
     	else
-    	  System.loadLibrary("SCGen32");	
+    	  throw new RuntimeException("JRE architecture not 32/62 bit");
+	    
     }
     
 	/**
