@@ -52,4 +52,25 @@ public class Keyboard
 		
 	} 
 	
+	/**
+	 * Emulates multiple key press. Keys pressed via this method must be released using {@link #winReleaseCombination(int...)}}
+	 * @param scanCodes - Multiple scan code values
+	 */
+	public void winPressCombination(int... scanCodes)
+	{
+		for(int scanCode : scanCodes)
+			this.winKeyPress(scanCode);
+	}
+	
+	/**
+	 * Emulates multiple key release.
+	 * @param scanCodes - Multiple scan code values
+	 */
+	public void winReleaseCombination(int... scanCodes)
+	{
+		for(int scanCode : scanCodes)
+			this.winKeyRelease(scanCode);
+	}
+	
+	
 }
