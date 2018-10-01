@@ -1,4 +1,4 @@
-# winKeyboad
+# winKeyboard
 A tiny Java helper for Windows for emulating keyboard via scan codes.
 
 In java application if you send keystrokes to the game using <strong>java.awt.Robot</strong>, then games which uses DirectInput API for reading the keyboard input (scancodes) may have no effect.
