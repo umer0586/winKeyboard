@@ -1,4 +1,4 @@
-# winKeyboard
+# winKeyboard (JNI)
 A tiny Java helper for Windows for emulating keyboard via scan codes.
 
 In java application if you send keystrokes to the game using <strong>java.awt.Robot</strong>, then games which uses DirectInput API for reading the keyboard input (scancodes) may have no effect.
@@ -25,7 +25,6 @@ LEFT_CTRL+LEFT_SHIFT+A
 </pre>
 
 
-Download : <a href="https://drive.google.com/open?id=1AAR0YtvxChKn-7qirngXRfwt9yRwgoUt">keyboard.jar</a>
 
 <div>
 <h4>Important</h4>
