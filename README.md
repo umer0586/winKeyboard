@@ -5,24 +5,24 @@ In java application if you send keystrokes to the game using <strong>java.awt.Ro
 
 Here is a simple java helper for Windows which allow java applications to send keystrokes to the game/application by generating keyboard scan code
 
-<pre>
+```java
 Keyboard keyboard = new Keyboard();
 keyboard.winKeyPress(ScanCode.DIK_UP);
 //Thread.sleep(1000);
 keyboard.winKeyRelease(ScanCode.DIK_UP);
-</pre>
+```
 
 To send combination (e.g LEFT_SHIFT+A )
-<pre>
+```java
  kb.winPressCombination(ScanCode.DIK_LSHIFT,ScanCode.DIK_A);
  kb.winReleaseCombination(ScanCode.DIK_LSHIFT,ScanCode.DIK_A);
-</pre>
+ ```
 
 LEFT_CTRL+LEFT_SHIFT+A
-<pre>
+```java
  kb.winPressCombination(ScanCode.DIK_LCONTROL,ScanCode.DIK_LSHIFT,ScanCode.DIK_A);
  kb.winReleaseCombination(ScanCode.DIK_LCONTROL,ScanCode.DIK_LSHIFT,ScanCode.DIK_A);
-</pre>
+```
 
 
 
