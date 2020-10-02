@@ -1,9 +1,9 @@
 # winKeyboard (JNI)
-A tiny Java helper for Windows for emulating keyboard via scan codes.
+A tiny Java helper for Java applications running under **Windows** for emulating keyboard via scan codes.
 
-In java application if you send keystrokes to the game using <strong>java.awt.Robot</strong>, then games which uses DirectInput API for reading the keyboard input (scancodes) may have no effect.
+If a Java application sends keystroke to the game using `java.awt.Robot`, then games which uses `DirectInput API` for reading keyboard input `(scancodes)` may have no effect.
 
-Here is a simple java helper for Windows which allow java applications to send keystrokes to the game/application by generating keyboard scan code
+Here is a simple Java helper for Windows which allow Java applications to send keystrokes to the game/application by generating keyboard scancode using Java Native Interface (JNI)
 
 ```java
 Keyboard keyboard = new Keyboard();
@@ -26,7 +26,7 @@ LEFT_CTRL+LEFT_SHIFT+A
 
 
 
-<div>
-<h4>Important</h4>
-make sure you place SCGen32.dll and SCGen64.dll in java library path other wise java.lang.UnsatisfiedLinkError will be thrown
-</div>
+
+# Important
+    make sure you place SCGen32.dll and SCGen64.dll in java library path otherwise java.lang.UnsatisfiedLinkError will be thrown
+
