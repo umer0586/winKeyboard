@@ -24,6 +24,8 @@ LEFT_CTRL+LEFT_SHIFT+A
  kb.winReleaseCombination(ScanCode.DIK_LCONTROL,ScanCode.DIK_LSHIFT,ScanCode.DIK_A);
 ```
 
+# See this in action in this video
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/JgM5VdYF0Yg/0.jpg)](http://www.youtube.com/watch?v=JgM5VdYF0Yg "JavaFx")
 
 
 
